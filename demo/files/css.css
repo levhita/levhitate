@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tangerine'), url(http://fonts.gstatic.com/s/tangerine/v6/HGfsyCL5WASpHOFnouG-RD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Reenie Beanie';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Reenie Beanie'), local('ReenieBeanie'), url(http://fonts.gstatic.com/s/reeniebeanie/v6/ljpKc6CdXusL1cnGUSamX_n8qdNnd5eCmWXua5W-n7c.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://fonts.gstatic.com/s/droidsans/v6/s-BiyweUPV0v-yRb-cjciBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(http://fonts.gstatic.com/s/droidsans/v6/EFpQQyG9GqCrobXxL-KRMQFhaRv2pGgT5Kf0An0s4MM.woff) format('woff');
+}
