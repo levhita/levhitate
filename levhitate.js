@@ -6,9 +6,6 @@ $('a').levhitate({range:40, speed:1000}) // overwrites range and speed
 $('a').levhitate({stop:true}) // Current cycle will continue until it ends, and an animation to initial state will run.
 
 Only works well in block elements, best used to animate levhita's logo on his homepage.
-
-@TODO: Right now it matchs ands creates a single interval for the whole collection
-need to change it to individual animations so we can stop individual elements.
 **/
 
 (function ( $ ) {
@@ -23,7 +20,7 @@ need to change it to individual animations so we can stop individual elements.
       return this;
     }
 
-    // Gets and Save original position data so we restore it later
+    // Gets and Save original position data so we can restore it later
     opts.padding_top = parseInt(this.css('padding-top'));
     opts.padding_bottom = parseInt(this.css('padding-bottom'));
 

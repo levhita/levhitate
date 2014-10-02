@@ -1,11 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!-- saved from url=(0019)http://levhita.net/ -->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>levhita.net</title>
-	<meta name="application-name" content="Levhita&#39;s Busssines Card">
-  
-	<meta name="description" content="Levhita is a Web Developer and Free Software Advocate named Argel Arias from Guadalajara, Jalisco México.">
-	<meta name="keywords" content="PHP, Linux, Javascript, CSS, HTML, XHTML, FLOSS, Free Software, Open Source Software, Web Development, Guadalajara, México">
+	<title>Levhitate Plugin Test</title>
+	  
 	<meta name="author" content="Argel Arias">
 	<link rel="stylesheet" type="text/css" href="./files/style.css">
   <link href="./files/css.css" rel="stylesheet" type="text/css">
@@ -14,7 +11,20 @@
   
   <script type="text/javascript">
     $(document).ready(function(){
+      levitating = true;
       $("#logo").levhitate();
+      
+      $("#logo").click(function(){
+        if(levitating) {
+          console.log('stoping');
+          $("#logo").levhitate({stop:true});
+          levitating=false;
+        } else {
+          console.log('levitating');
+          levitating = true;
+          $("#logo").levhitate();    
+        }
+      });
     });
   </script> 
 </head>
@@ -25,50 +35,12 @@
 		<h1 >Levhita</h1>
     
     <img id="logo" src="./files/levhita_logo.png" alt="Levhita´s Logo">
+    <img src="./files/levhita_shadow.png" alt="Levhita´s Shadow">
     
     <blockquote>
       <p>"Freedom Comes in Small Packages, Usually TCP/IP"</p>
       <p class="signature">Argel Arias</p>
     </blockquote>
 
-		<p><strong>Levhita</strong> is a Web Developer and Free Software Advocate actually named <strong>Argel Arias</strong> from Guadalajara, Jalisco México.</p>  
-
-		<h2>Contact:</h2>
-		
-    <ul>
-    	<li>Read my personal blog named <a href="http://blog.levhita.net/">Radio Levhita</a>.</li>
-    
-		  <li>Play with my toys in <a href="http://labs.levhita.net/">Levhita Labs</a>, the place
-	    where I put little projects that doesn't deserve a full site for themselves.</li>
-    
-    	<li>Follow me in <a href="http://twitter.com/levhita">Twitter</a>!, which accounts as my public profile.</li>
-    
-    	<li>Are you friend or family? add me as friend in <a href="http://facebook.com/levhita">Facebook</a>.</li>
-    
-    	<li>See my artistict side in <a href="http://levhita.deviantart.com/">DeviantArt</a>.</li>
-    
-    	<li>Also take a look at my selected photograps in my <a href="http://levhita.daportfolio.com/">Portfolio</a>.</li>
-    
-    	<li>Join to my bussines conections at <a href="http://mx.linkedin.com/in/levhita">LinkedIn</a> (also my official curriculum).</li>
-    
-    	<li>Send me an <a href="mailto:levhita AT gmail DOT com">e-mail</a> (also works in Messenger, Gtalk and Jabber, but I almost never turn on IM).</li>
-    
-    	<li>Or just <a href="http://www.google.com/search?q=levhita">Google for me</a>.</li>
-  		</ul>
-      
-      
-	</div>
-  <div id="footer">
-    <a class="twitter" href="http://twitter.com/levhita" title="Follow Me on Twitter!"><span>Follow me On Twitter!</span></a>
-    <a class="face" href="http://twitter.com/levhita" title="Friend me in Facebook"><span>Friend me in Facebook!</span></a>
-    <a class="linkedin" href="http://mx.linkedin.com/in/levhita" title="See my curriculum at LinkedIn"><span>See my curriculum at LinkedIn!</span></a>
-  </div>
-  
-  <form id="tilda" class="hidden" action="http://levhita.net/#" onsubmit="return false">
-    <div class="spacer">
-    <div>&gt; <input type="text" name="command" id="command" onkeyup="tildaMonitor(event);"></div>
-    <div id="output"></div>
-    </div>
-  </form>
-</body>
+	</body>
 </html>

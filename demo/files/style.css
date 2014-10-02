@@ -2,10 +2,7 @@ body {
   font-family: Helvetica, arial, serif;
   background-image: url(images/pattern.png);
 }
-#footer {
-  position:fixed;
-  bottom:10px;
-  }
+
 #content {
   position:relative;
   margin: auto;
@@ -17,6 +14,11 @@ body {
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
 }
+
+#footer {
+  position:fixed;
+  bottom:10px;
+  }
 
 h1, h2 {
   font-family: 'Droid Sans', arial, serif;
@@ -46,70 +48,4 @@ blockquote p {
 blockquote p.signature {
   text-align: right;
   font-size: large;
-}
-li {
-  margin-left: 0;
-  margin-right: 10%;
-  margin-top: .5em;
-  margin-bottom: .5em;
-}
-a{
-  color:#2F40FF;
-  font-weight:bolder;
-  text-decoration:none;
-}
-a:visited {
-  color:#5F6CFF;
-}
-a:hover {
-  text-decoration:underline;
-}
-a.twitter span, a.face span, a.linkedin span { display:none; }
-a.twitter, a.face, a.linkedin{
-  display:block;
-  width:100px;
-  height:100px;
-  margin:5px 0px 0px 10px;
-  -webkit-transition: all .5s ease-in-out;
-  }
-a.twitter:hover, a.twitter:active, a.face:hover, a.face:active,
-a.linkedin:hover, a.linkedin:active {
-	-webkit-transform: rotate(-10deg);
-	}
-	
-a.twitter { background:url(images/twitter.png) }
-a.twitter:hover, a.twitter:active { background:url(images/twitter_c.png) }
-
-a.face { background:url(images/face.png) }
-a.face:hover, a.face:active { background:url(images/face_c.png)} 
-
-a.linkedin { background:url(images/linkedin.png) }
-a.linkedin:hover, a.linkedin:active { background:url(images/linkedin_c.png) }
-
-#tilda.visible {
-	position:absolute;
-	top:0px;
-	left:0px;
-	background: #000;
-	width:100%;
-	height:300px;
-	color:white;
-	margin:0;
-	padding: 0px;
-	opacity: .9;
-	overflow:auto;
-	}
-	
-#tilda input {
-	background: #000;
-  width:90%;
-  color:white;
-  border:none;
-	}
-
-#tilda.hidden {
-	display:none;
-	}
-#tilda .spacer {
-  padding:10px;
-}
+}	
