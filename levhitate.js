@@ -8,20 +8,22 @@ $('a').levhitate({stop:true}) // Current cycle will continue until it ends, and 
 Only works well in block elements, best used to animate levhita's logo on his homepage.
 **/
 
-(function ( $ ) {
-
+(function ($) {
   $.fn.levhitate = function(options) {
     var opts = $.extend({}, $.fn.levhitate.settings, options )
     
     this.each(function() {
-      if(typeof $(this).data('lev_interval')!=="undefined"&&opts.stop==true){
-        //Stop the levitation, reseting to original state and stoping interval
-        clearInterval($(this).data('lev_interval'));
-        $(this).data('lev_stop', true);
-        return true;
-      } else{
-        //Trying to stop a non levitating object
-        return true; 
+      
+      if(opts.stop==true) {
+        if(typeof $(this).data('lev_interval')!=="undefined"){
+          //Stop the levitation, reseting to original state and stoping interval
+          clearInterval($(this).data('lev_interval'));
+          $(this).data('lev_stop', true);
+          return true;
+        } else {
+          //Trying to stop a non levitating object
+          return true; 
+        }
       }
 
       if(typeof $(this).data('lev_interval')!=="undefined"){
