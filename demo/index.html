@@ -11,18 +11,18 @@
   
   <script type="text/javascript">
     $(document).ready(function(){
-      levitating = true;
-      $("#logo").levhitate();
+      levitating = false;
+      /*$("#logo").levhitate();*/
       
-      $("#logo").click(function(){
+      $("img").click(function(){
         if(levitating) {
           console.log('stoping');
-          $("#logo").levhitate({stop:true});
+          $(this).levhitate({stop:true});
           levitating=false;
         } else {
           console.log('levitating');
           levitating = true;
-          $("#logo").levhitate();    
+          $(this).levhitate();    
         }
       });
     });
