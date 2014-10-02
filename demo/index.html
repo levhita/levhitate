@@ -12,19 +12,7 @@
   <script type="text/javascript">
     $(document).ready(function(){
       levitating = false;
-      /*$("#logo").levhitate();*/
-      
-      $("img").click(function(){
-        if(levitating) {
-          console.log('stoping');
-          $(this).levhitate({stop:true});
-          levitating=false;
-        } else {
-          console.log('levitating');
-          levitating = true;
-          $(this).levhitate();    
-        }
-      });
+      $("#logo").levhitate();
     });
   </script> 
 </head>
